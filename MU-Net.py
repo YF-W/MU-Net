@@ -2,13 +2,10 @@ import torch
 import torch.nn as nn
 import torchvision.transforms.functional as TF
 """
-重新设计
-在Unet的基础上设计
-1.只保留了左侧图像的原始池化并粘贴在下采样并输入
-2.优化卷积。增加了两个blcok，每个包含一个并行3*3和5*5
-3.增加了注意力机制，并连接了残差
-
-在v3.31的基础上增加分离卷积
+MU-Net
+With Multi-scale Convolution Block
+With Multi-scale SEBlock
+With Depthwise Separable Convolution
 """
 class AttentionBlcok(nn.Module):
     def __init__(
