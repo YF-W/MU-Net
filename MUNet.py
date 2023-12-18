@@ -10,7 +10,7 @@ from einops.layers.torch import Rearrange
 MU-Net: Multi-kernels U-NET
 Proposed By Yuefei Wang
 Chengdu University
-2023.4.26
+2023.12
 This code is for free trial by fellow researchers, commercial use is strictly prohibited.
 """
 
